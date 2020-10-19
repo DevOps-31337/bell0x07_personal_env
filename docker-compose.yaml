@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  main_environment:
+    image: bell0x07_environment
+    volumes:
+      - personal_files:/opt/personal
+    ports:
+      - "8080:80"
+    restart: always
+volumes:
+  personal_files: {}
